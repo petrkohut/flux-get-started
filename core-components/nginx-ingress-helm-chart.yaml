@@ -1,0 +1,16 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: helm-nginx-ingress
+  namespace: nginx-ingress
+spec:
+  releaseName: nginx-ingress
+  targetNamespace: nginx-ingress
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: nginx-ingress
+    version: 1.40.1
+  values:
+    controller:
+      service:
+        loadBalancerIP: "34.76.144.133"

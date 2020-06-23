@@ -10,7 +10,7 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: nginx-ingress
     version: 1.40.1
-  values:
-    controller:
-      service:
-        loadBalancerIP: "34.76.144.133"
+  # values:
+  #   controller:
+  #     service:
+  #       loadBalancerIP: "34.76.144.133"
